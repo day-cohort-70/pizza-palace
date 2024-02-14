@@ -21,7 +21,27 @@ Menu
             size: 12,
             price: 8.99
         },
-        .....
+        {
+            id: 2,
+            label: "Medium",
+            description: "It's tiny"
+            size: 12,
+            price: 8.99
+        },
+        {
+            id: 3,
+            label: "Large",
+            description: "It's tiny"
+            size: 12,
+            price: 8.99
+        },
+        {
+            id: 4,
+            label: "Super",
+            description: "It's tiny"
+            size: 12,
+            price: 8.99
+        },
     ],
     crusts: [
         {
@@ -88,7 +108,7 @@ Menu
             id: 1,
             label: "Pepsi"
         }
-    ]
+    ],
     orders: [
         {
             id: 1,
@@ -97,14 +117,14 @@ Menu
                     sizeId: 1,
                     crustId: 4,
                     sauceId: 2,
-                    cheeseIds: [1, 2],
+                    cheeseIds: [1, 5],
                     toppingIds: [2, 3, 5, 7, 9]
                 }
             ],
             salads: [
                 {
                     id: 1,
-                    baseId: 3,
+                    baseSaladTypeId: 3,
                     dressingId: 2,
                     toppingIds: [2, 3, 5, 6]
                 }
@@ -113,7 +133,6 @@ Menu
             drinks: []
         }
     ]
-
 }
 
 
