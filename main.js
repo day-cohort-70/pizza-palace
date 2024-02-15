@@ -10,13 +10,14 @@
     2. Functions I'll need
         menu.js
         -------
-        - menuDisplay
+        - displayMenu
 
         order.js
         --------
+        - recordUserChoice
         - order
-        - orderPayment
-        - markOrderComplete
+        - addToCart
+        - orderPaid
         - emailReceipt
         - viewOrder
 

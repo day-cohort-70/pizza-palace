@@ -1,18 +1,27 @@
 /*
 
-Pizza order object
-{
-    size: int,
-    crust: int,
-    sauce: int,
-    cheese: [],
-    toppings: []
-}
-
 
 Menu
 ----------
 {
+    menuItemTypes: [
+        {
+            id: 1,
+            type: "Pizza"
+        },
+        {
+            id: 2,
+            type: "Pasta"
+        },
+        {
+            id: 3,
+            type: "Salad"
+        },
+        {
+            id: 4,
+            type: "Drink"
+        }
+    ],
     pizzaSizes: [
         {
             id: 1,
@@ -109,11 +118,38 @@ Menu
             label: "Pepsi"
         }
     ],
+
+    currentUserChoices: {
+        pizzaType: 1,
+        pizzaToppings: [1],
+        pizzaCheese: 3,
+        pizzaSize: 1,
+        pastaSauce: 2,
+        pastaType: 1,
+        pizzaSauce: 2,
+        pastaToppings: [1],
+        pastaCheese: 1,
+        saladType: 1,
+        saladDressing: 1,
+        saladToppings: 1,
+    },
+
+
+
     orders: [
         {
             id: 1,
             pizzas: [
                 {
+                    id: 1,
+                    sizeId: 1,
+                    crustId: 4,
+                    sauceId: 2,
+                    cheeseIds: [1, 5],
+                    toppingIds: [2, 3, 5, 7, 9]
+                },
+                {
+                    id: 2,
                     sizeId: 1,
                     crustId: 4,
                     sauceId: 2,
@@ -130,7 +166,34 @@ Menu
                 }
             ],
             pastas: [],
-            drinks: []
+            drinks: [],
+            paid: false,
+            paymentTypeId: null,
+            accountId: 4
+        }
+    ],
+    paymentTypes: [
+        {
+            id: 1,
+            processor: "Visa"
+        },
+        {
+            id: 2,
+            processor: "Mastercard"
+        }
+    ]
+    accounts: [
+        {
+            id: 1,
+            name: "Miss Ernest Schaden",
+            email: "Ellie_White52@hotmail.com",
+            staff: true
+        },
+        {
+            id: 2,
+            name: "June Ritchie",
+            email: "Donald.McDermott@yahoo.com",
+            staff: false
         }
     ]
 }
