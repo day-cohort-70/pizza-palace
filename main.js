@@ -3,9 +3,23 @@
     ---------------------
 */
 const { displayMenu } = require("./menu.js")
-
+const { recordUserChoice } = require("./order.js")
+const { parlorDatabase } = require("./database.js")
 
 displayMenu(1)
+
+recordUserChoice("pizzaCrust", 2)
+recordUserChoice("pizzaToppings", [2, 4, 6])
+recordUserChoice("pizzaCheese", 3)
+recordUserChoice("pizzaSize", 4)
+recordUserChoice("pizzaSauce", 1)
+
+console.log(parlorDatabase.currentUserChoices)
+
+
+recordUserChoice("pizzaCheese", 2)
+
+console.log(parlorDatabase.currentUserChoices)
 
 /*
     1. Define my data (structure)

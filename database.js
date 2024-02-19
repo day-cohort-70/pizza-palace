@@ -234,21 +234,21 @@ const parlorDatabase = {
         {
             id: 2,
             label: "Medium",
-            description: "It's tiny",
+            description: "It's medium",
             size: 12,
             price: 8.99
         },
         {
             id: 3,
             label: "Large",
-            description: "It's tiny",
+            description: "It's large",
             size: 12,
             price: 8.99
         },
         {
             id: 4,
             label: "Super",
-            description: "It's tiny",
+            description: "It's chonky",
             size: 12,
             price: 8.99
         },
@@ -260,6 +260,12 @@ const parlorDatabase = {
             description: "Much cheese",
             price: 1.10
         },
+        {
+            id: 2,
+            label: "Thin",
+            description: "Much thin",
+            price: 0.45
+        },
     ],
     sauces: [
         {
@@ -268,6 +274,12 @@ const parlorDatabase = {
             description: "Not that good",
             price: 0.80
         },
+        {
+            id: 2,
+            label: "Bolognese",
+            description: "Outstanding",
+            price: 4.00
+        },
     ],
     cheeses: [
         {
@@ -275,12 +287,54 @@ const parlorDatabase = {
             label: "Feta",
             description: "Flavor explosion",
             price: 0.50
+        },
+        {
+            id: 2,
+            label: "Mozzarella",
+            description: "Smooth",
+            price: 0.50
+        },
+        {
+            id: 3,
+            label: "Ricotta",
+            description: "Rich",
+            price: 0.50
         }
     ],
     pizzaToppings: [
         {
             id: 1,
             label: "Pineapple",
+            description: "Tangy fruit",
+            price: 0.90
+        },
+        {
+            id: 2,
+            label: "Oranges",
+            description: "Tangy fruit",
+            price: 0.90
+        },
+        {
+            id: 3,
+            label: "Jalapenos",
+            description: "Tangy fruit",
+            price: 0.90
+        },
+        {
+            id: 4,
+            label: "Black olives",
+            description: "Tangy fruit",
+            price: 0.90
+        },
+        {
+            id: 5,
+            label: "Onions",
+            description: "Tangy fruit",
+            price: 0.90
+        },
+        {
+            id: 6,
+            label: "Pepperoni",
             description: "Tangy fruit",
             price: 0.90
         }
@@ -331,18 +385,18 @@ const parlorDatabase = {
     ],
 
     currentUserChoices: {
-        pizzaType: 1,
-        pizzaToppings: [1],
-        pizzaCheese: 3,
-        pizzaSize: 1,
-        pastaSauce: 2,
-        pastaType: 1,
-        pizzaSauce: 2,
-        pastaToppings: [1],
-        pastaCheese: 1,
-        saladType: 1,
-        saladDressing: 1,
-        saladToppings: 1,
+        pizzaCrust: 0,
+        pizzaToppings: [0],
+        pizzaCheese: 0,
+        pizzaSauce: 0,
+        pizzaSize: 0,
+        pastaSauce: 0,
+        pastaType: 0,
+        pastaToppings: [0],
+        pastaCheese: 0,
+        saladType: 0,
+        saladDressing: 0,
+        saladToppings: 0,
     },
 
 

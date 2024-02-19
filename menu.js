@@ -34,35 +34,33 @@ const displayMenu = (menuTypeId) => {
     if (menuTypeId === 1) {
         const pizzaTypes = parlorDatabase.pizzaSizes
         for (const pizzaOption of pizzaTypes) {
-            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
-            console.log(menuItemPastaDisplayString)
+            const pizzaOptionString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(pizzaOptionString)
         }
 
         const pizzaToppings = parlorDatabase.pizzaToppings
         for (const pizzaOption of pizzaToppings) {
-            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
-            console.log(menuItemPastaDisplayString)
+            const pizzaOptionString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(pizzaOptionString)
         }
 
         const pizzaSauces = parlorDatabase.sauces
         for (const pizzaOption of pizzaSauces) {
-            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
-            console.log(menuItemPastaDisplayString)
+            const pizzaOptionString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(pizzaOptionString)
         }
 
         const pizzaCrusts = parlorDatabase.crusts
         for (const pizzaOption of pizzaCrusts) {
-            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
-            console.log(menuItemPastaDisplayString)
+            const pizzaOptionString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(pizzaOptionString)
         }
 
         const pizzaCheeses = parlorDatabase.cheeses
         for (const pizzaOption of pizzaCheeses) {
-            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
-            console.log(menuItemPastaDisplayString)
+            const pizzaOptionString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(pizzaOptionString)
         }
-
-
     }
     else if(menuTypeId === 2) {
         const pastaTypes = parlorDatabase.pastaTypes

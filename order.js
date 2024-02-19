@@ -1,12 +1,14 @@
+const { parlorDatabase } = require("./database.js")
+
 /*
     Parameters
     =================
     menuType (string) - name of key from choices transient state
     id (int) - primary key chosen item
 */
-const recordUserChoice = (menuType, id) => {
+const recordUserChoice = (menuType, choices) => {
     // Access corresponding object property based on `menuType` value
-    // Update property value with current value of `id`
+    parlorDatabase.currentUserChoices[menuType] = choices
 }
 
 
