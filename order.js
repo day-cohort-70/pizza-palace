@@ -10,12 +10,39 @@ const recordUserChoice = (menuType, id) => {
 }
 
 
+/*
+    Parameters
+    =================
+    orderId (int) - The primary key of the order to be paid
+*/
 const orderPaid = (orderId) => {
     // Find the order
     // Toggle `paid` to true
 }
 
-const addToCart = () => {
+
+/*
+    Parameters
+    =================
+    orderId (int) - The primary key of the order whose details will be emailed
+    customerId (int) - Account primary key of customer to be emailed
+*/
+const emailReceipt = (orderId, customerId) => {
+    // Find the order
+
+    // Build string template for body of email, including total price
+
+    // Connect to email service and send
+}
+
+
+/*
+    Parameters
+    =================
+    menuItemTypeId (int) - The primary key of the type of menu item being added to cart
+    data (object) - The specific object representation of their choice
+*/
+const addToCart = (menuItemTypeId, data) => {
 
     /*
         1. Validate that all required options have been chosen
@@ -60,5 +87,24 @@ const addToCart = () => {
 }
 
 
+/*
+    Parameters
+    =================
+    customerId (int) - The primary key of the customer
+*/
+const viewCart = (customerId) => {
+    // Find the order assigned to customer that is unpaid
 
-module.exports = { addToCart, orderPaid, recordUserChoice }
+
+    // Build string template for summary of order
+
+
+    // console.log() the overview
+}
+
+
+
+module.exports = {
+    addToCart, orderPaid, recordUserChoice,
+    emailReceipt, viewCart
+}

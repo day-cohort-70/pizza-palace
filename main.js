@@ -2,7 +2,10 @@
     Pizza Palace project
     ---------------------
 */
+const { displayMenu } = require("./menu.js")
 
+
+displayMenu(1)
 
 /*
     1. Define my data (structure)
@@ -17,9 +20,9 @@
         - recordUserChoice
         - order
         - addToCart
+        - viewCart
         - orderPaid
         - emailReceipt
-        - viewOrder
 
         account.js
         ----------

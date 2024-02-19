@@ -7,8 +7,10 @@
         4 - Drink
     3. Given value of parameter, show all corresponding menu options
 */
+const { parlorDatabase } = require("./database.js")
 
-const displayMenu = () => {
+
+const displayMenu = (menuTypeId) => {
     /*
         Assume 1
         - get pizza sizes
@@ -17,9 +19,7 @@ const displayMenu = () => {
         - get cheeses
         - get pizza toppings
 
-        ** All menu items display name, description, ingredient options, and base price
-        Iterate each array of objects and use interpolation to inject properties into display string
-        console.log()
+
 
         Assume 2
         - get pasta types
@@ -31,6 +31,73 @@ const displayMenu = () => {
         - get salad toppings
         - get salad dressings
     */
+    if (menuTypeId === 1) {
+        const pizzaTypes = parlorDatabase.pizzaSizes
+        for (const pizzaOption of pizzaTypes) {
+            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+
+        const pizzaToppings = parlorDatabase.pizzaToppings
+        for (const pizzaOption of pizzaToppings) {
+            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+
+        const pizzaSauces = parlorDatabase.sauces
+        for (const pizzaOption of pizzaSauces) {
+            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+
+        const pizzaCrusts = parlorDatabase.crusts
+        for (const pizzaOption of pizzaCrusts) {
+            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+
+        const pizzaCheeses = parlorDatabase.cheeses
+        for (const pizzaOption of pizzaCheeses) {
+            const menuItemPastaDisplayString = `Item ${pizzaOption.label} (${pizzaOption.description}) costs $${pizzaOption.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+
+
+    }
+    else if(menuTypeId === 2) {
+        const pastaTypes = parlorDatabase.pastaTypes
+        const pastaToppings = parlorDatabase.pastaToppings
+        const pastaSauces = parlorDatabase.pastaSauces
+
+
+        for (const typeObject of pastaTypes) {
+            const menuItemPastaDisplayString = `Item ${typeObject.label} (${typeObject.description}) costs $${typeObject.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+
+    }
+    else if(menuTypeId === 3) {
+        const pastaTypes = parlorDatabase.pastaTypes
+        const pastaToppings = parlorDatabase.pastaToppings
+        const pastaSauces = parlorDatabase.pastaSauces
+
+
+        for (const typeObject of pastaTypes) {
+            const menuItemPastaDisplayString = `Item ${typeObject.label} (${typeObject.description}) costs $${typeObject.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+    }
+    else if(menuTypeId === 4) {
+        const pastaTypes = parlorDatabase.pastaTypes
+        const pastaToppings = parlorDatabase.pastaToppings
+        const pastaSauces = parlorDatabase.pastaSauces
+
+
+        for (const typeObject of pastaTypes) {
+            const menuItemPastaDisplayString = `Item ${typeObject.label} (${typeObject.description}) costs $${typeObject.price}`
+            console.log(menuItemPastaDisplayString)
+        }
+    }
 }
 
 module.exports = { displayMenu }
